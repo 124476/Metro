@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repos\\MetroProcess\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\servies\\netmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\servies\\netmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\models\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\models\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|d:\\repos\\metroprocess\\metroprocess\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7EB14DE9-6DDB-465A-93C2-56160428E687}|MetroProcess\\MetroProcess.csproj|solutionrelative:metroprocess\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 405,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartToEnd.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\StartToEnd.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\Models\\StartToEnd.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\StartToEnd.cs",
+              "RelativeToolTip": "MetroProcess\\Models\\StartToEnd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:52:44.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\Models\\Branch.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\Branch.cs",
+              "RelativeToolTip": "MetroProcess\\Models\\Branch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:52:40.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Train.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\Train.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\Models\\Train.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\Models\\Train.cs",
+              "RelativeToolTip": "MetroProcess\\Models\\Train.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:16:20.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NetManage.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\Servies\\NetManage.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\Servies\\NetManage.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\Servies\\NetManage.cs",
+              "RelativeToolTip": "MetroProcess\\Servies\\NetManage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:09:23.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\App.xaml.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\App.xaml.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\App.xaml.cs",
+              "RelativeToolTip": "MetroProcess\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:07:15.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MetroProcess\\MainWindow.xaml",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\MainWindow.xaml",
+              "RelativeToolTip": "MetroProcess\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T11:06:36.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\MetroProcess\\MetroProcess\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MetroProcess\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\repos\\MetroProcess\\MetroProcess\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MetroProcess\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAiwFUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T11:06:35.8Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

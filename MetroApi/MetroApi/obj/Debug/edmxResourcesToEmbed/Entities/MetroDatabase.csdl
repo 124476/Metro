@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MetroDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="MetroDatabaseEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Branch" EntityType="MetroDatabaseModel.Branch" />
+    <EntitySet Name="StartToEnd" EntityType="MetroDatabaseModel.StartToEnd" />
+    <EntitySet Name="Station" EntityType="MetroDatabaseModel.Station" />
+    <EntitySet Name="sysdiagrams" EntityType="MetroDatabaseModel.sysdiagrams" />
+    <EntitySet Name="Train" EntityType="MetroDatabaseModel.Train" />
+    <AssociationSet Name="FK_Branch_Station" Association="MetroDatabaseModel.FK_Branch_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Branch" EntitySet="Branch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Branch_Station1" Association="MetroDatabaseModel.FK_Branch_Station1">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Branch" EntitySet="Branch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Branch" Association="MetroDatabaseModel.FK_StartToEnd_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Train_Branch" Association="MetroDatabaseModel.FK_Train_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="Train" EntitySet="Train" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Station" Association="MetroDatabaseModel.FK_StartToEnd_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Station1" Association="MetroDatabaseModel.FK_StartToEnd_Station1">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Train_Station" Association="MetroDatabaseModel.FK_Train_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Train" EntitySet="Train" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="StationStartId" Type="Int32" />
+    <Property Name="StationEndId" Type="Int32" />
+    <NavigationProperty Name="Station" Relationship="MetroDatabaseModel.FK_Branch_Station" FromRole="Branch" ToRole="Station" />
+    <NavigationProperty Name="Station1" Relationship="MetroDatabaseModel.FK_Branch_Station1" FromRole="Branch" ToRole="Station" />
+    <NavigationProperty Name="StartToEnd" Relationship="MetroDatabaseModel.FK_StartToEnd_Branch" FromRole="Branch" ToRole="StartToEnd" />
+    <NavigationProperty Name="Train" Relationship="MetroDatabaseModel.FK_Train_Branch" FromRole="Branch" ToRole="Train" />
+  </EntityType>
+  <EntityType Name="StartToEnd">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationStartId" Type="Int32" />
+    <Property Name="StationEndId" Type="Int32" />
+    <Property Name="BranchId" Type="Int32" />
+    <NavigationProperty Name="Branch" Relationship="MetroDatabaseModel.FK_StartToEnd_Branch" FromRole="StartToEnd" ToRole="Branch" />
+    <NavigationProperty Name="Station" Relationship="MetroDatabaseModel.FK_StartToEnd_Station" FromRole="StartToEnd" ToRole="Station" />
+    <NavigationProperty Name="Station1" Relationship="MetroDatabaseModel.FK_StartToEnd_Station1" FromRole="StartToEnd" ToRole="Station" />
+  </EntityType>
+  <EntityType Name="Station">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Branch" Relationship="MetroDatabaseModel.FK_Branch_Station" FromRole="Station" ToRole="Branch" />
+    <NavigationProperty Name="Branch1" Relationship="MetroDatabaseModel.FK_Branch_Station1" FromRole="Station" ToRole="Branch" />
+    <NavigationProperty Name="StartToEnd" Relationship="MetroDatabaseModel.FK_StartToEnd_Station" FromRole="Station" ToRole="StartToEnd" />
+    <NavigationProperty Name="StartToEnd1" Relationship="MetroDatabaseModel.FK_StartToEnd_Station1" FromRole="Station" ToRole="StartToEnd" />
+    <NavigationProperty Name="Train" Relationship="MetroDatabaseModel.FK_Train_Station" FromRole="Station" ToRole="Train" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Train">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StationId" Type="Int32" />
+    <Property Name="IsUp" Type="Boolean" />
+    <Property Name="IsRun" Type="Boolean" />
+    <Property Name="BranchId" Type="Int32" />
+    <NavigationProperty Name="Branch" Relationship="MetroDatabaseModel.FK_Train_Branch" FromRole="Train" ToRole="Branch" />
+    <NavigationProperty Name="Station" Relationship="MetroDatabaseModel.FK_Train_Station" FromRole="Train" ToRole="Station" />
+  </EntityType>
+  <Association Name="FK_Branch_Station">
+    <End Type="MetroDatabaseModel.Station" Role="Station" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.Branch" Role="Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="StationStartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Branch_Station1">
+    <End Type="MetroDatabaseModel.Station" Role="Station" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.Branch" Role="Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="StationEndId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Branch">
+    <End Type="MetroDatabaseModel.Branch" Role="Branch" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.StartToEnd" Role="StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Train_Branch">
+    <End Type="MetroDatabaseModel.Branch" Role="Branch" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.Train" Role="Train" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Train">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Station">
+    <End Type="MetroDatabaseModel.Station" Role="Station" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.StartToEnd" Role="StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="StationStartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Station1">
+    <End Type="MetroDatabaseModel.Station" Role="Station" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.StartToEnd" Role="StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="StationEndId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Train_Station">
+    <End Type="MetroDatabaseModel.Station" Role="Station" Multiplicity="0..1" />
+    <End Type="MetroDatabaseModel.Train" Role="Train" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Train">
+        <PropertyRef Name="StationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,260 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repos\\MetroApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|d:\\repos\\metroapi\\metroapi\\entities\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\metrodatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\metrodatabase.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\metrodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\metrodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\sysdiagrams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\sysdiagrams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\starttoendscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\starttoendscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\trainscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\trainscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\branchescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\stationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\entities\\metrodatabase.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\entities\\metrodatabase.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\controllers\\valuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|D:\\repos\\MetroApi\\metroapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9DE93841-B116-4AC7-8018-87091C70ECD7}|MetroApi\\MetroApi.csproj|solutionrelative:metroapi\\app_start\\webapiconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 405,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TrainsController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\TrainsController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\TrainsController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\TrainsController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\TrainsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:37:28.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Station.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Station.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\Station.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Station.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\Station.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAC8AAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:28:53.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Branch.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\Branch.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Branch.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\Branch.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:12:42.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StationsController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\StationsController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\StationsController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\StationsController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\StationsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:04:18.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Train.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Train.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\Train.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\Train.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\Train.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:23:00.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MetroDatabase.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.edmx",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\MetroDatabase.edmx",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.edmx [Diagram1]",
+              "RelativeToolTip": "MetroApi\\Entities\\MetroDatabase.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2024-07-29T09:37:37.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StartToEnd.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\StartToEnd.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\StartToEnd.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\StartToEnd.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\StartToEnd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:29:00.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MetroDatabase.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\MetroDatabase.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\MetroDatabase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:29:57.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StartToEndsController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\StartToEndsController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\StartToEndsController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\StartToEndsController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\StartToEndsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowAoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:04:49.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sysdiagrams.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\sysdiagrams.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\sysdiagrams.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\sysdiagrams.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\sysdiagrams.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:29:14.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BranchesController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\BranchesController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\BranchesController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\BranchesController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\BranchesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:36:58.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:22:15.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MetroDatabase.Context.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.Context.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Entities\\MetroDatabase.Context.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Entities\\MetroDatabase.Context.cs",
+              "RelativeToolTip": "MetroApi\\Entities\\MetroDatabase.Context.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwB8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:22:42.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ValuesController.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\ValuesController.cs",
+              "RelativeDocumentMoniker": "MetroApi\\Controllers\\ValuesController.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\Controllers\\ValuesController.cs",
+              "RelativeToolTip": "MetroApi\\Controllers\\ValuesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:22:28.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WebApiConfig.cs",
+              "DocumentMoniker": "D:\\repos\\MetroApi\\MetroApi\\App_Start\\WebApiConfig.cs",
+              "RelativeDocumentMoniker": "MetroApi\\App_Start\\WebApiConfig.cs",
+              "ToolTip": "D:\\repos\\MetroApi\\MetroApi\\App_Start\\WebApiConfig.cs",
+              "RelativeToolTip": "MetroApi\\App_Start\\WebApiConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:38:56.354Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

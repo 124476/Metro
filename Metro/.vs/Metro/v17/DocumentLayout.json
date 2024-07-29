@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\repos\\Metro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\pages\\pagemain.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\models\\train.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\pages\\pagemain.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\models\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\models\\starttoend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\servies\\netmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\servies\\netmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\models\\station.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|d:\\repos\\metro\\metro\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCDB1C32-3874-44A5-95CA-5146108BFDAE}|Metro\\Metro.csproj|solutionrelative:metro\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 405,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Metro\\App.xaml.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\App.xaml.cs",
+              "RelativeToolTip": "Metro\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:56:08.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StartToEnd.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Models\\StartToEnd.cs",
+              "RelativeDocumentMoniker": "Metro\\Models\\StartToEnd.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Models\\StartToEnd.cs",
+              "RelativeToolTip": "Metro\\Models\\StartToEnd.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:06:13.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Station.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Models\\Station.cs",
+              "RelativeDocumentMoniker": "Metro\\Models\\Station.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Models\\Station.cs",
+              "RelativeToolTip": "Metro\\Models\\Station.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:05:24.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "Metro\\Models\\Branch.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Models\\Branch.cs",
+              "RelativeToolTip": "Metro\\Models\\Branch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T10:05:01.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NetManage.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Servies\\NetManage.cs",
+              "RelativeDocumentMoniker": "Metro\\Servies\\NetManage.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Servies\\NetManage.cs",
+              "RelativeToolTip": "Metro\\Servies\\NetManage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:58:05.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PageMain.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Pages\\PageMain.xaml.cs",
+              "RelativeDocumentMoniker": "Metro\\Pages\\PageMain.xaml.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Pages\\PageMain.xaml.cs",
+              "RelativeToolTip": "Metro\\Pages\\PageMain.xaml.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAAE0AAABeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:57:39.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PageMain.xaml",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Pages\\PageMain.xaml",
+              "RelativeDocumentMoniker": "Metro\\Pages\\PageMain.xaml",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Pages\\PageMain.xaml",
+              "RelativeToolTip": "Metro\\Pages\\PageMain.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T09:56:44.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Train.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\Models\\Train.cs",
+              "RelativeDocumentMoniker": "Metro\\Models\\Train.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\Models\\Train.cs",
+              "RelativeToolTip": "Metro\\Models\\Train.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAQwFAAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:56:10.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Metro\\MainWindow.xaml",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\MainWindow.xaml",
+              "RelativeToolTip": "Metro\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-29T09:54:54.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\repos\\Metro\\Metro\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Metro\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\repos\\Metro\\Metro\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Metro\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-29T09:54:53.136Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

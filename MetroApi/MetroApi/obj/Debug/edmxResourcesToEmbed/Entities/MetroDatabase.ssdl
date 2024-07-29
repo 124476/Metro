@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище MetroDatabaseModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Branch">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+    <Property Name="StationStartId" Type="int" />
+    <Property Name="StationEndId" Type="int" />
+  </EntityType>
+  <EntityType Name="StartToEnd">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StationStartId" Type="int" />
+    <Property Name="StationEndId" Type="int" />
+    <Property Name="BranchId" Type="int" />
+  </EntityType>
+  <EntityType Name="Station">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Train">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="StationId" Type="int" />
+    <Property Name="IsUp" Type="bit" />
+    <Property Name="IsRun" Type="bit" />
+    <Property Name="BranchId" Type="int" />
+  </EntityType>
+  <Association Name="FK_Branch_Station">
+    <End Role="Station" Type="Self.Station" Multiplicity="0..1" />
+    <End Role="Branch" Type="Self.Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="StationStartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Branch_Station1">
+    <End Role="Station" Type="Self.Station" Multiplicity="0..1" />
+    <End Role="Branch" Type="Self.Branch" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Branch">
+        <PropertyRef Name="StationEndId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Branch">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="StartToEnd" Type="Self.StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Station">
+    <End Role="Station" Type="Self.Station" Multiplicity="0..1" />
+    <End Role="StartToEnd" Type="Self.StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="StationStartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StartToEnd_Station1">
+    <End Role="Station" Type="Self.Station" Multiplicity="0..1" />
+    <End Role="StartToEnd" Type="Self.StartToEnd" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StartToEnd">
+        <PropertyRef Name="StationEndId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Train_Branch">
+    <End Role="Branch" Type="Self.Branch" Multiplicity="0..1" />
+    <End Role="Train" Type="Self.Train" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Branch">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Train">
+        <PropertyRef Name="BranchId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Train_Station">
+    <End Role="Station" Type="Self.Station" Multiplicity="0..1" />
+    <End Role="Train" Type="Self.Train" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Station">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Train">
+        <PropertyRef Name="StationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище MetroDatabaseModelContainer">
+    <EntitySet Name="Branch" EntityType="Self.Branch" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StartToEnd" EntityType="Self.StartToEnd" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Station" EntityType="Self.Station" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Train" EntityType="Self.Train" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Branch_Station" Association="Self.FK_Branch_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Branch" EntitySet="Branch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Branch_Station1" Association="Self.FK_Branch_Station1">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Branch" EntitySet="Branch" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Branch" Association="Self.FK_StartToEnd_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Station" Association="Self.FK_StartToEnd_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StartToEnd_Station1" Association="Self.FK_StartToEnd_Station1">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="StartToEnd" EntitySet="StartToEnd" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Train_Branch" Association="Self.FK_Train_Branch">
+      <End Role="Branch" EntitySet="Branch" />
+      <End Role="Train" EntitySet="Train" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Train_Station" Association="Self.FK_Train_Station">
+      <End Role="Station" EntitySet="Station" />
+      <End Role="Train" EntitySet="Train" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
