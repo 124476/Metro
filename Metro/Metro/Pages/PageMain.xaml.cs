@@ -1,5 +1,6 @@
 ﻿using Metro.Models;
 using Metro.Servies;
+using Metro.Windows;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +29,7 @@ namespace Metro.Pages
         {
             InitializeComponent();
             dispatcherTimer = new DispatcherTimer();
-            dispatcherTimer.Interval = TimeSpan.FromSeconds(5);
+            dispatcherTimer.Interval = TimeSpan.FromSeconds(1);
             dispatcherTimer.Tick += SetRefresh;
             dispatcherTimer.Start();
 
@@ -56,27 +57,6 @@ namespace Metro.Pages
             var branches = (await NetManage.Get<List<Branch>>("api/branches")).ToList();
             var startToEnds = (await NetManage.Get<List<StartToEnd>>("api/startToEnds")).ToList();
 
-            foreach (var train in trains)
-                train.Station = stations.FirstOrDefault(x => x.Id == train.StationId);
-
-            foreach (var train in trains)
-                train.Branch = branches.FirstOrDefault(x => x.Id == train.BranchId);
-
-            foreach (var branch in branches)
-                branch.StationStart = stations.FirstOrDefault(x => x.Id == branch.StationStartId);
-
-            foreach (var branch in branches)
-                branch.StationEnd = stations.FirstOrDefault(x => x.Id == branch.StationEndId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.StationStart = stations.FirstOrDefault(x => x.Id == startToEnd.StationStartId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.StationEnd = stations.FirstOrDefault(x => x.Id == startToEnd.StationEndId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.Branch = branches.FirstOrDefault(x => x.Id == startToEnd.BranchId);
-
             App.startToEnds = startToEnds;
             
             if (ComboLines.SelectedIndex != 0)
@@ -97,7 +77,8 @@ namespace Metro.Pages
             var train = ListTrains.SelectedItem as Train;
             if (train == null)
                 return;
-            MessageBox.Show(train.Stations);
+            var dialog = new OknoTrain(train);
+            dialog.ShowDialog();
         }
     }
 }

@@ -46,27 +46,6 @@ namespace MetroProcess
             var branches = (await NetManage.Get<List<Branch>>("api/branches")).ToList();
             var startToEnds = (await NetManage.Get<List<StartToEnd>>("api/startToEnds")).ToList();
 
-            foreach (var train in trains)
-                train.Station = stations.FirstOrDefault(x => x.Id == train.StationId);
-
-            foreach (var train in trains)
-                train.Branch = branches.FirstOrDefault(x => x.Id == train.BranchId);
-
-            foreach (var branch in branches)
-                branch.StationStart = stations.FirstOrDefault(x => x.Id == branch.StationStartId);
-
-            foreach (var branch in branches)
-                branch.StationEnd = stations.FirstOrDefault(x => x.Id == branch.StationEndId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.StationStart = stations.FirstOrDefault(x => x.Id == startToEnd.StationStartId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.StationEnd = stations.FirstOrDefault(x => x.Id == startToEnd.StationEndId);
-
-            foreach (var startToEnd in startToEnds)
-                startToEnd.Branch = branches.FirstOrDefault(x => x.Id == startToEnd.BranchId);
-
             App.startToEnds = startToEnds;
 
             foreach (var train in trains)
@@ -88,7 +67,14 @@ namespace MetroProcess
                     }
                 }
                 train.IsRun = !train.IsRun;
-                NetManage.Set($"api/trains/{train.Id}", train);
+                NetManage.Set($"api/trains/{train.Id}", new Train()
+                {
+                    Id = train.Id,
+                    IsUp = train.IsUp,
+                    IsRun = train.IsRun,
+                    StationId = train.StationId,
+                    BranchId = train.BranchId,
+                });
             }
         }
     }

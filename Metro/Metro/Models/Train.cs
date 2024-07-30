@@ -49,7 +49,7 @@ namespace Metro.Models
                 return "Движется от " + Station.Name + " до " + stationEnd.Name;
             }
         }
-        public string Stations
+        public List<Station> Stations
         {
             get
             {
@@ -58,16 +58,29 @@ namespace Metro.Models
                 if (!IsUp)
                     stationEnd = Branch.StationStart;
 
-                var text = stationNow.Name;
+                var stations = new List<Station>();
                 while(stationNow.Id != stationEnd.Id)
                 {
                     if (IsUp)
                         stationNow = App.startToEnds.FirstOrDefault(x => x.StationStartId == stationNow.Id && x.BranchId == BranchId).StationEnd;
                     else
                         stationNow = App.startToEnds.FirstOrDefault(x => x.StationEndId == stationNow.Id && x.BranchId == BranchId).StationStart;
-
-                    text += " -> " + stationNow.Name;
+                    stations.Add(stationNow);
                 }
+
+                return stations;
+            }
+        }
+        public string textStations
+        {
+            get
+            {
+                var stationNow = Station;
+                var stationEnd = Branch.StationEnd;
+                if (!IsUp)
+                    stationEnd = Branch.StationStart;
+
+                var text = "";
 
                 if (!IsRun)
                 {

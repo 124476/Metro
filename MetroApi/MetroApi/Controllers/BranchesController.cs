@@ -17,9 +17,23 @@ namespace MetroApi.Controllers
         private MetroDatabaseEntities db = new MetroDatabaseEntities();
 
         // GET: api/Branches
-        public IQueryable<Branch> GetBranch()
+        public IHttpActionResult GetBranch()
         {
-            return db.Branch;
+            return Ok(db.Branch.Select(branch => new
+            {
+                branch.Id,
+                branch.Name,
+                Station = new
+                {
+                    Id = branch.StationStartId,
+                    Name = branch.Station.Name
+                },
+                Station1 = new
+                {
+                    Id = branch.StationEndId,
+                    Name = branch.Station1.Name
+                },
+            }));
         }
 
         // GET: api/Branches/5
@@ -32,7 +46,21 @@ namespace MetroApi.Controllers
                 return NotFound();
             }
 
-            return Ok(branch);
+            return Ok(new
+            {
+                branch.Id,
+                branch.Name,
+                StationStart = new
+                {
+                    Id = branch.StationStartId,
+                    Name = branch.Station.Name
+                },
+                StationEnd = new
+                {
+                    Id = branch.StationEndId,
+                    Name = branch.Station1.Name
+                },
+            });
         }
 
         // PUT: api/Branches/5

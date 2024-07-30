@@ -14,9 +14,7 @@ namespace Metro.Models
         public bool IsUp { get; set; }
         public bool IsRun { get; set; }
         public int? BranchId { get; set; }
-        [JsonIgnore]
         public Station Station { get; set; }
-        [JsonIgnore]
         public Branch Branch { get; set; }
     }
 }

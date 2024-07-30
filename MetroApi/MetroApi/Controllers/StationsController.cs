@@ -17,9 +17,13 @@ namespace MetroApi.Controllers
         private MetroDatabaseEntities db = new MetroDatabaseEntities();
 
         // GET: api/Stations
-        public IQueryable<Station> GetStation()
+        public IHttpActionResult GetStation()
         {
-            return db.Station;
+            return Ok(db.Station.Select(station => new
+            {
+                station.Id,
+                station.Name
+            }));
         }
 
         // GET: api/Stations/5
@@ -32,7 +36,11 @@ namespace MetroApi.Controllers
                 return NotFound();
             }
 
-            return Ok(station);
+            return Ok(new
+            {
+                station.Id,
+                station.Name
+            });
         }
 
         // PUT: api/Stations/5

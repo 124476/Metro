@@ -1,0 +1,23 @@
+﻿<Window x:Class="Metro.Windows.OknoTrain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Metro.Windows"
+        mc:Ignorable="d"
+        Title="Поезд" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid x:Name="GridStations" Margin="40,0">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border x:Name="BorderSlider" Background="Red" Height="30" Grid.Row="1" Margin="0,20"></Border>
+        </Grid>
+        <TextBlock x:Name="TextTrain" FontSize="17" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1"></TextBlock>
+    </Grid>
+</Window>

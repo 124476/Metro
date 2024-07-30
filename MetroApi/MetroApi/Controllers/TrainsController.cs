@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -17,9 +18,38 @@ namespace MetroApi.Controllers
         private MetroDatabaseEntities db = new MetroDatabaseEntities();
 
         // GET: api/Trains
-        public IQueryable<Train> GetTrain()
+        public IHttpActionResult GetTrain()
         {
-            return db.Train;
+            return Ok(db.Train.Select(x => new
+            {
+                Id = x.Id,
+                IsUp = x.IsUp,
+                IsRun = x.IsRun,
+                StationId = x.StationId,
+                BranchId = x.BranchId,
+                Station = new
+                {
+                    Id = x.StationId,
+                    Name = x.Station.Name
+                },
+                Branch = new
+                {
+                    Id = x.BranchId,
+                    Name = x.Branch.Name,
+                    StationStartId = x.Branch.StationStartId,
+                    StationEndId = x.Branch.StationEndId,
+                    StationStart = new
+                    {
+                        Id = x.Branch.StationStartId,
+                        Name = x.Branch.Station.Name
+                    },
+                    StationEnd = new
+                    {
+                        Id = x.Branch.StationEndId,
+                        Name = x.Branch.Station1.Name
+                    },
+                }
+            }));
         }
 
         // GET: api/Trains/5
@@ -32,7 +62,36 @@ namespace MetroApi.Controllers
                 return NotFound();
             }
 
-            return Ok(train);
+            return Ok(new
+            {
+                Id = train.Id,
+                IsUp = train.IsUp,
+                IsRun = train.IsRun,
+                StationId = train.StationId,
+                BranchId = train.BranchId,
+                Station = new
+                {
+                    Id = train.StationId,
+                    Name = train.Station.Name
+                },
+                Branch = new
+                {
+                    Id = train.BranchId,
+                    Name = train.Branch.Name,
+                    StationStartId = train.Branch.StationStartId,
+                    StationEndId = train.Branch.StationEndId,
+                    StationStart = new
+                    {
+                        Id = train.Branch.StationStartId,
+                        Name = train.Branch.Station.Name
+                    },
+                    StationEnd = new
+                    {
+                        Id = train.Branch.StationEndId,
+                        Name = train.Branch.Station1.Name
+                    },
+                }
+            });
         }
 
         // PUT: api/Trains/5

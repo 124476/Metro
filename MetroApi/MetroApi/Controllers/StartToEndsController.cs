@@ -17,9 +17,32 @@ namespace MetroApi.Controllers
         private MetroDatabaseEntities db = new MetroDatabaseEntities();
 
         // GET: api/StartToEnds
-        public IQueryable<StartToEnd> GetStartToEnd()
+        public IHttpActionResult GetStartToEnd()
         {
-            return db.StartToEnd;
+            return Ok(db.StartToEnd.Select(startToEnd => new
+            {
+                Id = startToEnd.Id,
+                StationStartId = startToEnd.StationStartId,
+                StationEndId = startToEnd.StationEndId,
+                BranchId = startToEnd.BranchId,
+                StationStart = new
+                {
+                    Id = startToEnd.StationStartId,
+                    Name = startToEnd.Station.Name
+                },
+                StationEnd = new
+                {
+                    Id = startToEnd.StationEndId,
+                    Name = startToEnd.Station1.Name
+                },
+                Branch = new
+                {
+                    Id = startToEnd.BranchId,
+                    Name = startToEnd.Branch.Name,
+                    StationStartId = startToEnd.Branch.StationStartId,
+                    StationEndId = startToEnd.Branch.StationEndId,
+                }
+            }));
         }
 
         // GET: api/StartToEnds/5
@@ -32,7 +55,30 @@ namespace MetroApi.Controllers
                 return NotFound();
             }
 
-            return Ok(startToEnd);
+            return Ok(new
+            {
+                Id = startToEnd.Id,
+                StationStartId = startToEnd.StationStartId,
+                StationEndId = startToEnd.StationEndId,
+                BranchId = startToEnd.BranchId,
+                StationStart = new
+                {
+                    Id = startToEnd.StationStartId,
+                    Name = startToEnd.Station.Name
+                },
+                StationEnd = new
+                {
+                    Id = startToEnd.StationEndId,
+                    Name = startToEnd.Station1.Name
+                },
+                Branch = new
+                {
+                    Id = startToEnd.BranchId,
+                    Name = startToEnd.Branch.Name,
+                    StationStartId = startToEnd.Branch.StationStartId,
+                    StationEndId = startToEnd.Branch.StationEndId,
+                }
+            });
         }
 
         // PUT: api/StartToEnds/5
